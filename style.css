@@ -17,6 +17,14 @@ body {
     background-color: #222;
 }
 
+.gridlines{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+}
+
 .sidebar a{ 
     transition: 1s linear ease-in;
 }
@@ -87,13 +95,15 @@ header {
     font-size: 14px;
 }
 
+
 .contact{
     border: none;
 }
 
 .header{
+    z-index: -2;
     padding: 30px;
-    background-color: #222;
+    /* background-color: #222; */
     display: grid;
     grid-template-columns: 3fr 8fr 1fr ;
 
